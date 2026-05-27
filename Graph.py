@@ -131,7 +131,7 @@ class Graph:
         return endpoint in self.__list_of_neighbors[startpoint]
 
     def neighbors(self, vertex):
-        #O(1)
+        #O(e/v)
         if vertex not in self.__list_of_neighbors:
             raise ValueError("Vertex does not exist.")
 
